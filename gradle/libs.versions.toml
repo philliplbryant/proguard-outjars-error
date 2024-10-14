@@ -1,0 +1,31 @@
+[versions]
+
+kotlin = "1.9.23"
+log4j-kotlin = "1.5.0"
+proguard = "7.5.0"
+
+[libraries]
+
+[libraries.kotlin-gradle-plugin-dependency]
+module = "org.jetbrains.kotlin:kotlin-gradle-plugin"
+version.ref = "kotlin"
+
+[libraries.log4j-kotlin]
+module = "org.apache.logging.log4j:log4j-api-kotlin"
+version.ref = "log4j-kotlin"
+
+[libraries.proguard-gradle-plugin-dependency]
+module = "com.guardsquare:proguard-gradle"
+version.ref = "proguard"
+
+[bundles]
+
+[plugins]
+
+[plugins.kotlin-gradle-plugin]
+id = "org.jetbrains.kotlin.jvm"
+version.ref = "kotlin"
+
+[plugins.proguard-gradle-plugin]
+id = "com.guardsquare:proguard-gradle"
+version.ref = "kotlin"
